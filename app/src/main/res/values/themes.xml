@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BisnisKita" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark_purple</item>
+        <item name="colorPrimaryVariant">@color/dark_purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/light_purple</item>
+        <item name="colorSecondaryVariant">@color/light_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/light_pink</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize your theme here. -->
+        <!-- Font -->
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColorPrimary">@color/dark_purple</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/icon_splashscreen</item>
+        <item name="android:windowSplashScreenAnimationDuration">2000</item>
+
+    </style>
+
+    <style name="buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+<!--        <item name="android:background">@color/dark_purple</item>-->
+    </style>
+
+
+    <style name="card_login_register">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/light_purple</item>
+        <item name="cardCornerRadius">50dp</item>
+    </style>
+
+
+    <style name="text_button" parent="buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+
+    <style name="heading">
+        <item name="android:fontFamily">@font/fira_sans_condensed_medium</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+    <style name="heading2" parent="heading">
+        <item name="android:fontFamily">@font/fira_sans_condensed</item>
+    </style>
+
+
+    <style name="toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:paddingVertical">15dp</item>
+        <item name="android:background">@color/light_pink</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.ActionBar</item>
+    </style>
+
+    <style name="pic_wo_icon">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+</resources>

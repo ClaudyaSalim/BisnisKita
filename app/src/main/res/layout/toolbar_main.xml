@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/toolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profilIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="100dp"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile_icon"
+                android:layout_gravity="center_horizontal"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchBar"
+            android:layout_height="match_parent"
+            android:layout_width="250dp"
+            android:background="@drawable/rounded_searchbar"
+            android:elevation="10dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search">
+
+        </androidx.appcompat.widget.SearchView>
+
+
+        <ImageButton
+            style="@style/pic_wo_icon"
+            android:id="@+id/logoutIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logout_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

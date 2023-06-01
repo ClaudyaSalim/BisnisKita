@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment"
+    android:id="@+id/home_fragment">
+
+    <include
+        layout="@layout/toolbar_main"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stores"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shop_rv"
+                tools:listitem="@layout/grid_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"/>
+
+            <TextView
+                style="@style/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Stuffs"
+                android:layout_marginBottom="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                tools:listitem="@layout/grid_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

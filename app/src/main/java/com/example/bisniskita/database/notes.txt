@@ -1,0 +1,3 @@
+nanti bagian ini dilanjutin ama backend ya, kalau pake sqlite / database file lain disini diapus aja
+trus nanti digantiin sama file yg mirip" kayak praktek aslab / dosen kemaren
+-- clau
