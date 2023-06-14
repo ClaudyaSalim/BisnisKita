@@ -51,7 +51,7 @@ public class DetailShopActivity extends AppCompatActivity {
         itemsRecyclerView.setLayoutManager(layoutManager);
         data = new ArrayList<>();
         for(int i = 0; i < MyItem.nama_barang.length; i++){
-            String itemName = MyItem.nama_barang[i].toString();
+            String itemName = MyItem.nama_barang[i];
             Log.e("Shop Name", shopName);
             Log.e("Item Name", itemName);
             if(itemName.contains(shopName)){
@@ -65,7 +65,7 @@ public class DetailShopActivity extends AppCompatActivity {
             }
         }
 
-        itemsAdapter = new ItemsAdapter(data);
+        itemsAdapter = new ItemsAdapter(this, data);
         itemsRecyclerView.setAdapter(itemsAdapter);
     }
 

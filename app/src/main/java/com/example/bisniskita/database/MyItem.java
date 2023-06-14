@@ -13,8 +13,8 @@ public class MyItem {
             "Erigo Hoodie Kareem Black", "Erigo T-Shirt Vintage Gang Black" ,"Tas Ransel Revyla","Wallet Print Star","Wallts Chairmaine Autumn","Wallts Avery Tritone Navy"
     };
 
-    public static String[] harga_barang = {
-            "Rp.200.000", "Rp.73.000", "Rp.58.000", "Rp.12.000", "Rp.199.000", "Rp.134.900"
+    public static int[] harga_barang = {
+            200000, 73000, 58000, 12000, 199000, 134900
     };
 
 }

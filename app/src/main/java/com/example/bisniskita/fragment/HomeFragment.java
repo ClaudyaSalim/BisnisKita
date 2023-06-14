@@ -1,8 +1,11 @@
 package com.example.bisniskita.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,7 +15,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.autofill.AutofillValue;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
+import com.example.bisniskita.HomeActivity;
+import com.example.bisniskita.MainActivity;
 import com.example.bisniskita.R;
 import com.example.bisniskita.adapter.ItemsAdapter;
 import com.example.bisniskita.adapter.ShopsAdapter;
@@ -105,13 +112,26 @@ public class HomeFragment extends Fragment {
             ));
         }
 
-        itemsAdapter = new ItemsAdapter(data);
+        itemsAdapter = new ItemsAdapter(this.getContext(), data);
         itemsRecyclerView.setAdapter(itemsAdapter);
         searched = false;
+
+        // menu
 
         // bikin search function
         SearchView searchView = homeView.findViewById(R.id.searchBar);
         search(searchView);
+
+        ImageButton logoutBtn = homeView.findViewById(R.id.logoutIcon);
+        logoutBtn.setOnClickListener(e->{
+            Intent toLogin = new Intent(this.getContext(), MainActivity.class);
+            startActivity(toLogin);
+        });
+
+//        ImageButton profileBtn = homeView.findViewById(R.id.profilIcon);
+//        profileBtn.setOnClickListener(e->{
+//            Intent toProfile = new Intent(this.getContext(), HomeActivity.class);
+//        });
 
         return homeView;
     }

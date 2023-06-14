@@ -5,21 +5,24 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".fragment.CartFragment">
+    tools:context=".fragment.CartFragment"
+    android:gravity="center_horizontal">
 
     <include
         layout="@layout/toolbar_back"
         android:id="@+id/cart_bar"/>
 
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_rv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Hello Cart Fragment" />
-
-    </ScrollView>
+        android:layout_height="600dp"
+        android:paddingVertical="40dp"/>
+    
+    <Button
+        style="@style/buttons"
+        android:id="@+id/buy_now_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"/>
 
 </LinearLayout>

@@ -11,26 +11,10 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/profilIcon"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            app:cardCornerRadius="100dp"
-            android:layout_marginRight="20dp">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/profile_icon"
-                android:layout_gravity="center_horizontal"/>
-
-        </androidx.cardview.widget.CardView>
-
-
         <androidx.appcompat.widget.SearchView
             android:id="@+id/searchBar"
             android:layout_height="match_parent"
-            android:layout_width="250dp"
+            android:layout_width="300dp"
             android:background="@drawable/rounded_searchbar"
             android:elevation="10dp"
             app:iconifiedByDefault="false"

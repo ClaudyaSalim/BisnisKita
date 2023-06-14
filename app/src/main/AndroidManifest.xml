@@ -12,6 +12,12 @@
         android:theme="@style/Theme.BisnisKita"
         tools:targetApi="31">
         <activity
+            android:name=".ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ItemActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailShopActivity"
             android:exported="false" />
         <activity

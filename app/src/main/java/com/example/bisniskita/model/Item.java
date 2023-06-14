@@ -2,10 +2,10 @@ package com.example.bisniskita.model;
 
 public class Item {
 
-    String nama,harga;
-    int gambar;
+    String nama;
+    int harga, gambar;
 
-    public Item(String nama, String harga, int gambar) {
+    public Item(String nama, int harga, int gambar) {
         this.nama = nama;
         this.harga = harga;
         this.gambar = gambar;
@@ -15,7 +15,7 @@ public class Item {
         return nama;
     }
 
-    public String getHarga() {
+    public int getHarga() {
         return harga;
     }
 
@@ -23,4 +23,15 @@ public class Item {
         return gambar;
     }
 
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setHarga(int harga) {
+        this.harga = harga;
+    }
+
+    public void setGambar(int gambar) {
+        this.gambar = gambar;
+    }
 }

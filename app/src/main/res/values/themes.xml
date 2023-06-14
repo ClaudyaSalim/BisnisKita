@@ -28,7 +28,7 @@
         <item name="android:layout_height">60dp</item>
         <item name="android:textSize">20dp</item>
         <item name="android:fontFamily">@font/poppins_bold</item>
-<!--        <item name="android:background">@color/dark_purple</item>-->
+        <item name="android:backgroundTint">@color/dark_purple</item>
     </style>
 
 
@@ -71,6 +71,14 @@
 
     <style name="pic_wo_icon">
         <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="grid_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">3dp</item>
     </style>
 
 </resources>

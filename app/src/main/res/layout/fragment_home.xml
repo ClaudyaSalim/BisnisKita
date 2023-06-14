@@ -8,6 +8,7 @@
     android:id="@+id/home_fragment">
 
     <include
+        android:id="@+id/home_bar"
         layout="@layout/toolbar_main"/>
 
     <ScrollView
